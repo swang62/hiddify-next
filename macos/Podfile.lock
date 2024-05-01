@@ -3,9 +3,13 @@ PODS:
     - FlutterMacOS
   - device_info_plus (0.0.1):
     - FlutterMacOS
+  - dynamic_color (0.0.2):
+    - FlutterMacOS
   - flutter_timezone (0.1.0):
     - FlutterMacOS
   - FlutterMacOS (1.0.0)
+  - in_app_review (0.2.0):
+    - FlutterMacOS
   - mobile_scanner (3.5.6):
     - FlutterMacOS
   - package_info_plus (0.0.1):
@@ -54,8 +58,10 @@ PODS:
 DEPENDENCIES:
   - cupertino_http (from `Flutter/ephemeral/.symlinks/plugins/cupertino_http/macos`)
   - device_info_plus (from `Flutter/ephemeral/.symlinks/plugins/device_info_plus/macos`)
+  - dynamic_color (from `Flutter/ephemeral/.symlinks/plugins/dynamic_color/macos`)
   - flutter_timezone (from `Flutter/ephemeral/.symlinks/plugins/flutter_timezone/macos`)
   - FlutterMacOS (from `Flutter/ephemeral`)
+  - in_app_review (from `Flutter/ephemeral/.symlinks/plugins/in_app_review/macos`)
   - mobile_scanner (from `Flutter/ephemeral/.symlinks/plugins/mobile_scanner/macos`)
   - package_info_plus (from `Flutter/ephemeral/.symlinks/plugins/package_info_plus/macos`)
   - path_provider_foundation (from `Flutter/ephemeral/.symlinks/plugins/path_provider_foundation/darwin`)
@@ -80,10 +86,14 @@ EXTERNAL SOURCES:
     :path: Flutter/ephemeral/.symlinks/plugins/cupertino_http/macos
   device_info_plus:
     :path: Flutter/ephemeral/.symlinks/plugins/device_info_plus/macos
+  dynamic_color:
+    :path: Flutter/ephemeral/.symlinks/plugins/dynamic_color/macos
   flutter_timezone:
     :path: Flutter/ephemeral/.symlinks/plugins/flutter_timezone/macos
   FlutterMacOS:
     :path: Flutter/ephemeral
+  in_app_review:
+    :path: Flutter/ephemeral/.symlinks/plugins/in_app_review/macos
   mobile_scanner:
     :path: Flutter/ephemeral/.symlinks/plugins/mobile_scanner/macos
   package_info_plus:
@@ -112,8 +122,10 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   cupertino_http: afa11b9e2786b62da2671e4ddd32caf792503748
   device_info_plus: 5401765fde0b8d062a2f8eb65510fb17e77cf07f
+  dynamic_color: 2eaa27267de1ca20d879fbd6e01259773fb1670f
   flutter_timezone: 6b906d1740654acb16e50b639835628fea851037
   FlutterMacOS: 8f6f14fa908a6fb3fba0cd85dbd81ec4b251fb24
+  in_app_review: a850789fad746e89bce03d4aeee8078b45a53fd0
   mobile_scanner: 54ceceae0c8da2457e26a362a6be5c61154b1829
   package_info_plus: 02d7a575e80f194102bef286361c6c326e4c29ce
   path_provider_foundation: 29f094ae23ebbca9d3d0cec13889cd9060c0e943

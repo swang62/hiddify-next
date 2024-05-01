@@ -159,7 +159,7 @@ abstract class ConfigOptions {
   static final tlsFragmentSize =
       PreferencesNotifier.create<OptionalRange, String>(
     "tls-fragment-size",
-    const OptionalRange(min: 10, max: 200),
+    const OptionalRange(min: 100, max: 200),
     mapFrom: OptionalRange.parse,
     mapTo: const OptionalRangeJsonConverter().toJson,
   );
