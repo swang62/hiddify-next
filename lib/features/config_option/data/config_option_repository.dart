@@ -47,7 +47,7 @@ abstract class ConfigOptions {
 
   static final remoteDnsAddress = PreferencesNotifier.create<String, String>(
     "remote-dns-address",
-    "udp://1.1.1.1",
+    "tcp://8.8.8.8",
     validator: (value) => value.isNotBlank,
   );
 
@@ -61,7 +61,7 @@ abstract class ConfigOptions {
 
   static final directDnsAddress = PreferencesNotifier.create<String, String>(
     "direct-dns-address",
-    "1.1.1.1",
+    "8.8.8.8",
     validator: (value) => value.isNotBlank,
   );
 
@@ -153,13 +153,13 @@ abstract class ConfigOptions {
 
   static final enableTlsFragment = PreferencesNotifier.create<bool, bool>(
     "enable-tls-fragment",
-    false,
+    true,
   );
 
   static final tlsFragmentSize =
       PreferencesNotifier.create<OptionalRange, String>(
     "tls-fragment-size",
-    const OptionalRange(min: 1, max: 500),
+    const OptionalRange(min: 10, max: 200),
     mapFrom: OptionalRange.parse,
     mapTo: const OptionalRangeJsonConverter().toJson,
   );
@@ -167,7 +167,7 @@ abstract class ConfigOptions {
   static final tlsFragmentSleep =
       PreferencesNotifier.create<OptionalRange, String>(
     "tls-fragment-sleep",
-    const OptionalRange(min: 0, max: 500),
+    const OptionalRange(min: 10, max: 20),
     mapFrom: OptionalRange.parse,
     mapTo: const OptionalRangeJsonConverter().toJson,
   );
