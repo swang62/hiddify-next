@@ -24,14 +24,11 @@ class QRCodeScannerScreen extends StatefulHookConsumerWidget {
   }
 
   @override
-  ConsumerState<QRCodeScannerScreen> createState() =>
-      _QRCodeScannerScreenState();
+  ConsumerState<QRCodeScannerScreen> createState() => _QRCodeScannerScreenState();
 }
 
-class _QRCodeScannerScreenState extends ConsumerState<QRCodeScannerScreen>
-    with WidgetsBindingObserver, PresLogger {
-  final controller =
-      MobileScannerController(detectionTimeoutMs: 500, autoStart: false);
+class _QRCodeScannerScreenState extends ConsumerState<QRCodeScannerScreen> with WidgetsBindingObserver, PresLogger {
+  final controller = MobileScannerController(detectionTimeoutMs: 500, autoStart: false);
   bool started = false;
 
   late FlutterEasyPermission _easyPermission;
@@ -66,8 +63,7 @@ class _QRCodeScannerScreenState extends ConsumerState<QRCodeScannerScreen>
   }
 
   void startQrScannerIfPermissionGranted() {
-    FlutterEasyPermission.has(perms: permissions, permsGroup: permissionGroup)
-        .then((value) {
+    FlutterEasyPermission.has(perms: permissions, permsGroup: permissionGroup).then((value) {
       if (value) {
         controller.start().then((result) {
           if (result != null) {
@@ -139,8 +135,7 @@ class _QRCodeScannerScreenState extends ConsumerState<QRCodeScannerScreen>
                 final uri = Uri.tryParse(rawData);
                 if (context.mounted && uri != null) {
                   loggy.debug('captured url: [$uri]');
-                  Navigator.of(context, rootNavigator: true)
-                      .pop(uri.toString());
+                  Navigator.of(context, rootNavigator: true).pop(uri.toString());
                 }
               } else {
                 loggy.warning("unable to capture");
@@ -148,8 +143,7 @@ class _QRCodeScannerScreenState extends ConsumerState<QRCodeScannerScreen>
             },
             errorBuilder: (_, error, __) {
               final message = switch (error.errorCode) {
-                MobileScannerErrorCode.permissionDenied =>
-                  t.profile.add.qrScanner.permissionDeniedError,
+                MobileScannerErrorCode.permissionDenied => t.profile.add.qrScanner.permissionDeniedError,
                 _ => t.profile.add.qrScanner.unexpectedError,
               };
 

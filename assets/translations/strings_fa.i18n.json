@@ -54,12 +54,12 @@
       "updatedTimeAgo": "${timeago} به‌روزرسانی شد",
       "remainingDuration": "${duration} روز باقی مانده",
       "remainingTrafficSemanticLabel": "${consumed} از ${total} ترافیک مصرف شده",
-      "expired": "منقضی شده",
-      "noTraffic": "اتمام سهمیه",
+      "expired": "پایان زمان مجاز",
+      "noTraffic": "پایان حجم مجاز",
       "upload": "آپلود",
       "download": "دانلود",
       "total": "کل ترافیک",
-      "expireDate": "تاریخ انقضاء"
+      "expireDate": "تاریخ پایان"
     },
     "sortBy": {
       "lastUpdate": "اخیراً به‌روز شده",
@@ -78,6 +78,8 @@
         "permissionRequest": "دسترسی به دوربین برای اسکن کد QR"
       },
       "manually": "افزودن دستی",
+      "addWarp": "افزودن وارپ",
+      "addingWarpMsg": "لطفا صبر کنید تا وارپ ثبت شود",
       "addingProfileMsg": "در حال افزودن پروفایل",
       "failureMsg": "افزودن پروفایل ناموفق بود"
     },
@@ -162,8 +164,8 @@
     "requiresRestartMsg": "برای اعمال این تنظیم، برنامه را دوباره راه‌اندازی کنید",
     "experimental": "آزمایشی",
     "experimentalMsg": "تنظیماتی که عنوان آزمایشی دارند، هم‌چنان در دست توسعه هستند و فعال‌سازی آن‌ها می‌تواند باعث بروز مشکلاتی شود. ",
-    "exportOptions": "صادر کردن تنظیمات به کلیپ‌بورد",
-    "exportAllOptions": "صادر کردن تنظیمات به کلیپ‌بورد (اشکال‌زدایی)",
+    "exportOptions": "کپی تنظیمات ساده به کلیپ‌بورد",
+    "exportAllOptions": "کپی همه تنظیمات به کلیپ‌بورد",
     "importOptions": "وارد کردن تنظیمات از کلیپ‌بورد",
     "importOptionsMsg": "این اقدام همه‌ی تنظیمات پیکربندی را با مقادیر اولیه بازنویسی می‌کند. آیا مطمئن هستید؟",
     "general": {
